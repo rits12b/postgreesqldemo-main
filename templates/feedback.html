@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Thank You!</title>
+  </head>
+  <body>
+    <div class="container">
+        {% for post in posts %}
+          <div class="post-preview">
+              <h2 class="post-title">{{ post.customer }}
+
+              </h2>
+              <h3 class="post-subtitle">
+                {{post.dealer}}
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              on {{post.rating}}</p>
+          </div>
+
+          {{post.comments}}...
+          <hr>
+          {% endfor %}
+    </div>
+  </body>
+</html>
