@@ -11,17 +11,16 @@
     <div class="container">
         {% for post in posts %}
           <div class="post-preview">
-              <h2 class="post-title">{{ post.customer }}
+              <h2 class="post-title">Customer Name:{{ post.customer }}
 
               </h2>
-              <h3 class="post-subtitle">
+              <h3 class="post-subtitle">Dealer Name:
                 {{post.dealer}}
               </h3>
             </a>
-            <p class="post-meta">Posted by
-              on {{post.rating}}</p>
+            <p class="post-meta">Rating Given:{{post.rating}}</p>
           </div>
-
+            Comment:
           {{post.comments}}...
           <hr>
           {% endfor %}
